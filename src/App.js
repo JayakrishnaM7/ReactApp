@@ -5,25 +5,15 @@ import HeaderComponent from "./components/HeaderComponent";
 import JobInformation from "./components/JobInformation";
 import PersonalInformationComponent from "./components/PersonalInformationComponent";
 import EmergencyContactInformationComponent from './components/EmergencyContactInformationComponent';
+import SaveComponent from './components/SaveEmployeeComponent';
+import SaveEmployeeComponent from './components/SaveEmployeeComponent';
+import CreateEmployee from './components/CreateEmployee';
+
 function App() {
   return (
     <div>
-      <HeaderComponent />
-      <div>
-        <JobInformation />
-      </div>
-      <div>
-        <PersonalInformationComponent />
-      </div>
-      <div>
-        <EmergencyContactInformationComponent />
-      </div>
-      <div>
-        <br />
-      </div>
-      <div>
-        <SaveComponent />
-      </div>
+      <CreateEmployee />
+      
       <div>
         <FooterComponent />
       </div>

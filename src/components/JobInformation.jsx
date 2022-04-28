@@ -1,3 +1,4 @@
+import { render } from "@testing-library/react";
 import React, { useState } from "react";
 
 function JobInformation() {
@@ -30,6 +31,7 @@ function JobInformation() {
         }))
     }
   return (
+    
     <div>
       <header>
         <p>JobInformation</p>
