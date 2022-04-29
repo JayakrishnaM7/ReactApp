@@ -390,25 +390,25 @@ function CreateEmployee() {
         </div>
         <div>
           <label style={mystyleText}>Address  :</label>
-          <input placeholder="Address" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'1000px'}}type="text" name="personalAddress" value={values.personalAddress} onChange={handleAddressInputChange}/>
+          <input placeholder="Address" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}}type="text" name="personalAddress" value={values.personalAddress} onChange={handleAddressInputChange}/>
           <br/>
           <br/>
           </div>
           <div>
           <label style={mystyleText}>Home Phone  :</label>
-          <input placeholder="Home Phone" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'1000px'}} type="number" name="homePhone" value={values.homePhone} onChange={handleHomePhoneInputChange}/>
+          <input placeholder="Home Phone" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}} type="number" name="homePhone" value={values.homePhone} onChange={handleHomePhoneInputChange}/>
           <br/>
           <br/>
           </div>
           <div>
           <label style={mystyleText}>Cell Phone  :</label>
-          <input placeholder="Cell Phone" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'1000px'}} type="number" name="cellPhone" value={values.cellPhone} onChange={handleCellPhoneInputChange}/>
+          <input placeholder="Cell Phone" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}} type="number" name="cellPhone" value={values.cellPhone} onChange={handleCellPhoneInputChange}/>
           <br/>
           <br/>
           </div>
           <div>
           <label style={mystyleText}>Email Address  :</label>
-          <input placeholder="Email Address" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'1000px'}} type="text" name="personalEmailAddress" value={values.personalEmailAddress} onChange={handlePersonalEmailAddressInputChange}/>
+          <input placeholder="Email Address" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}} type="text" name="personalEmailAddress" value={values.personalEmailAddress} onChange={handlePersonalEmailAddressInputChange}/>
           <br/>
           <br/>
           </div>
