@@ -357,14 +357,14 @@ function CreateEmployee() {
           <br/>
         </div>
         <div>
-          <label style={mystyleWorkPhone}>Work Phone  :</label>
-          
-          <input placeholder="Work Phone" type="number" name="workphone" value={values.workphone} onChange={handleWorkPhoneInputChange}/>
+          <label style={{marginLeft:20}}>Work Phone  :</label>
+         
+          <input placeholder="Work Phone" style={{marginLeft:30}} type="number" name="workphone" value={values.workphone} onChange={handleWorkPhoneInputChange}/>
           <br/>
           <br/>
          
           <label style={mystyleEmail}>Email Address  :      </label>
-          <input placeholder="Email Address" type="text" name="emailAddress" value={values.emailAddress} onChange={handleEmailAddressInputChange}/>
+          <input placeholder="Email Address" style={{marginLeft:25}} type="text" name="emailAddress" value={values.emailAddress} onChange={handleEmailAddressInputChange}/>
           <br/>
           <br/>
           </div>
@@ -380,31 +380,31 @@ function CreateEmployee() {
        
         <div>
           <label style={mystyleText}>Full Name  :</label>
-          <input placeholder="FullName" type ="text" name="fullName" value={values.fullName} onChange={handleFullNameInputChange} />
+          <input placeholder="FullName" style={{marginLeft:25}} type ="text" name="fullName" value={values.fullName} onChange={handleFullNameInputChange} />
           <br/>
           <br/>
         </div>
         <div>
           <label style={mystyleText}>Address  :</label>
-          <input placeholder="Address" type="text" name="personalAddress" value={values.personalAddress} onChange={handleAddressInputChange}/>
+          <input placeholder="Address" style={{marginLeft:25}} type="text" name="personalAddress" value={values.personalAddress} onChange={handleAddressInputChange}/>
           <br/>
           <br/>
           </div>
           <div>
           <label style={mystyleText}>Home Phone  :</label>
-          <input placeholder="Home Phone" type="number" name="homePhone" value={values.homePhone} onChange={handleHomePhoneInputChange}/>
+          <input placeholder="Home Phone" style={{marginLeft:25}} type="number" name="homePhone" value={values.homePhone} onChange={handleHomePhoneInputChange}/>
           <br/>
           <br/>
           </div>
           <div>
           <label style={mystyleText}>Cell Phone  :</label>
-          <input placeholder="Cell Phone" type="number" name="cellPhone" value={values.cellPhone} onChange={handleCellPhoneInputChange}/>
+          <input placeholder="Cell Phone" style={{marginLeft:25}} type="number" name="cellPhone" value={values.cellPhone} onChange={handleCellPhoneInputChange}/>
           <br/>
           <br/>
           </div>
           <div>
           <label style={mystyleText}>Email Address  :</label>
-          <input placeholder="Email Address" type="text" name="personalEmailAddress" value={values.personalEmailAddress} onChange={handlePersonalEmailAddressInputChange}/>
+          <input placeholder="Email Address" style={{marginLeft:25}} type="text" name="personalEmailAddress" value={values.personalEmailAddress} onChange={handlePersonalEmailAddressInputChange}/>
           <br/>
           <br/>
           </div>
@@ -420,9 +420,9 @@ function CreateEmployee() {
          
         <div>
           <label style={mystyleText}>#1 contact:</label>
-          <input placeholder="First" type ="text" name="Contact" value={values.first} onChange={handleFirstInputChange} />
+          <input placeholder="First" style={{marginLeft:25}}  type ="text" name="Contact" value={values.first} onChange={handleFirstInputChange} />
           
-          <input placeholder="Last" type ="text" name="Contact" value={values.last} onChange={handleLastInputChange} />
+          <input placeholder="Last" style={{marginLeft:5}} type ="text" name="Contact" value={values.last} onChange={handleLastInputChange} />
           <br/>
           <br/>
         </div>
@@ -431,30 +431,30 @@ function CreateEmployee() {
           <label style={mystyleText}>Address  :</label>
 
             
-          <input placeholder="city" type="text" name="city" value={values.city} onChange={handleCityInputChange}/>
-          <input placeholder="state" type="text" name="state" value={values.state} onChange={handleStateInputChange}/>
-          <input placeholder="zipcode" type="text" name="zipcode" value={values.zipcode} onChange={handleZipcodeInputChange}/>
+          <input placeholder="city" style={{marginLeft:25}} type="text" name="city" value={values.city} onChange={handleCityInputChange}/>
+          <input placeholder="state" style={{marginLeft:10}}  type="text" name="state" value={values.state} onChange={handleStateInputChange}/>
+          <input placeholder="zipcode" style={{marginLeft:10}}  type="text" name="zipcode" value={values.zipcode} onChange={handleZipcodeInputChange}/>
           <br/>
           <br/>
           </div>
 
           <div>
           <label style={mystyleText}>primaryPhone  :</label>
-          <input placeholder="primaryPhone" type="text" name="primaryPhone" value={values.primaryPhone} onChange={handleprimaryPhoneInputChange}/>
+          <input placeholder="primaryPhone" style={{marginLeft:25}} type="text" name="primaryPhone" value={values.primaryPhone} onChange={handleprimaryPhoneInputChange}/>
           <br/>
           <br/>
           </div>
 
           <div>
           <label style={mystyleText}>alternatePhone  :</label>
-          <input placeholder="alternatePhone" type="text" name="alternatePhone" value={values.alternatePhone} onChange={handlealternatePhoneInputChange}/>
+          <input placeholder="alternatePhone" style={{marginLeft:25}} type="text" name="alternatePhone" value={values.alternatePhone} onChange={handlealternatePhoneInputChange}/>
           <br/>
           <br/>
           </div>
 
           <div>
           <label style={mystyleText}>relationship  :</label>
-          <input placeholder="relationship" type="text" name="relationship" value={values.relationship} onChange={handlerelationshipInputChange}/>
+          <input placeholder="relationship" style={{marginLeft:25}} type="text" name="relationship" value={values.relationship} onChange={handlerelationshipInputChange}/>
           <br/>
           <br/>
           </div>
@@ -463,8 +463,8 @@ function CreateEmployee() {
     </div>
     <div>
           <label style={mystyleText}>#2 contact:</label>
-          <input placeholder="First" type ="text" name="Contact" value={values.ecifirst} onChange={handleFirstInputChangeConatctTwo} />
-          <input placeholder="Last" type ="text" name="Contact" value={values.ecilast} onChange={handleLastInputChangeConatctTwo} />
+          <input placeholder="First"style={{marginLeft:25}}  type ="text" name="Contact" value={values.ecifirst} onChange={handleFirstInputChangeConatctTwo} />
+          <input placeholder="Last" style={{marginLeft:10}} type ="text" name="Contact" value={values.ecilast} onChange={handleLastInputChangeConatctTwo} />
           <br/>
           <br/>
         </div>
@@ -472,30 +472,30 @@ function CreateEmployee() {
           <label style={mystyleText}>Address  :</label>
 
             
-          <input placeholder="city" type="text" name="city" value={values.ecicity} onChange={handleCityInputChangeConatctTwo}/>
-          <input placeholder="state" type="text" name="state" value={values.ecistate} onChange={handleStateInputChangeConatctTwo}/>
-          <input placeholder="zipcode" type="text" name="zipcode" value={values.ecizipcode} onChange={handleZipcodeInputChangeConatctTwo}/>
+          <input placeholder="city" style={{marginLeft:25}}  type="text" name="city" value={values.ecicity} onChange={handleCityInputChangeConatctTwo}/>
+          <input placeholder="state" style={{marginLeft:10}} type="text" name="state" value={values.ecistate} onChange={handleStateInputChangeConatctTwo}/>
+          <input placeholder="zipcode" style={{marginLeft:10}} type="text" name="zipcode" value={values.ecizipcode} onChange={handleZipcodeInputChangeConatctTwo}/>
           <br/>
           <br/>
           </div>
 
           <div>
           <label style={mystyleText}>primaryPhone  :</label>
-          <input placeholder="primaryPhone" type="text" name="primaryPhone" value={values.eciprimaryPhone} onChange={handleprimaryPhoneInputChangeConatctTwo}/>
+          <input placeholder="primaryPhone" style={{marginLeft:25}} type="text" name="primaryPhone" value={values.eciprimaryPhone} onChange={handleprimaryPhoneInputChangeConatctTwo}/>
           <br/>
           <br/>
           </div>
 
           <div>
           <label style={mystyleText}>alternatePhone  :</label>
-          <input placeholder="alternatePhone" type="text" name="alternatePhone" value={values.ecialternatePhone} onChange={handlealternatePhoneInputChangeConatctTwo}/>
+          <input placeholder="alternatePhone" style={{marginLeft:25}} type="text" name="alternatePhone" value={values.ecialternatePhone} onChange={handlealternatePhoneInputChangeConatctTwo}/>
           <br/>
           <br/>
           </div>
 
           <div>
           <label style={mystyleText}>relationship  :</label>
-          <input placeholder="relationship" type="text" name="relationship" value={values.ecirelationship} onChange={handlerelationshipInputChangeConatctTwo}/>
+          <input placeholder="relationship" style={{marginLeft:25}} type="text" name="relationship" value={values.ecirelationship} onChange={handlerelationshipInputChangeConatctTwo}/>
           <br/>
           <br/>
           </div>
