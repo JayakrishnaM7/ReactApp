@@ -3,6 +3,69 @@ import React from 'react'
 import EmployeeService from "../services/EmployeeService";
 
 function CreateEmployee() {
+    
+        const mystyle = {
+          color: "white",
+          backgroundColor: "Red",
+          padding: "2px",
+          flex:1,
+          fontFamily: "Arial",
+          textAlign: 'center',
+          marginRight:10,
+          marginLeft:10
+          
+        };
+        const mystyleText = {
+            color: 'black',
+            marginTop:5,
+            marginBottam:5,
+            marginLeft:25
+        }
+        const mystyleEmail = {
+            color: 'black',
+            marginTop:5,
+            marginBottam:5,
+            marginLeft:25
+        }
+        const mystyleWorkPhone = {
+            color: 'black',
+            marginTop:5,
+            marginBottam:5,
+            marginLeft:25
+        }
+        const mystyleFullName = {
+            color: 'black',
+            marginTop:5,
+            marginBottam:5,
+            marginLeft:25
+        }
+        const mystyleAddress = {
+            color: 'black',
+            marginTop:5,
+            marginBottam:5,
+            marginLeft:25
+        }
+        const mystyleHomePhone = {
+            color: 'black',
+            marginTop:5,
+            marginBottam:5,
+            marginLeft:25
+        }
+        const mystyleCellPhone = {
+            color: 'black',
+            marginTop:5,
+            marginBottam:5,
+            marginLeft:25
+        }
+        const mystyleSave = {
+                textAlign: 'center',
+                marginTop:5,
+                marginBottam:5,
+                marginLeft:15,
+                fontcolor: "Red"
+            }
+        
+   
     const[values, setValues] = useState({
         todayDate: '',
         title: '',
@@ -270,136 +333,177 @@ function CreateEmployee() {
   return (
     <div>
      <header>
-        <p>Employee Contact Information Form</p>
+     <h1 style={{color: "black"}}>Employee Contact Information Form</h1>
       </header>
       Please complete the following information to ensure we maintain a current
       record of contact information for you and your emergency contacts.
       
       <form onSubmit={e => {handleSubmit(e)}}>
             <div>
-                <label>Today’s Date:</label>
-                <input type="date" name="todayDate" value={values.todayDate} onChange={handleTodayDateInputChange}/>
+                <label style={mystyleText}>Today’s Date:</label>
+                <input type="date"  name="todayDate" value={values.todayDate} onChange={handleTodayDateInputChange}/>
             </div>
             <div>
       <header>
-        <p>JobInformation</p>
+        <h4 style={mystyle}>JobInformation</h4>
       </header>
       <div>
         
         <div>
-          <label>Title/Position:</label>
-          <input placeholder="Title" type ="text" name="title" value={values.title} onChange={handleTitleInputChange} />
+          <label style={mystyleText}>Title/Position :</label>
+          
+          <input placeholder="Title"  style={mystyleText} type ="text" name="title" value={values.title} onChange={handleTitleInputChange} />
+          <br/>
+          <br/>
         </div>
         <div>
-          <label>Work Phone:</label>
+          <label style={mystyleWorkPhone}>Work Phone  :</label>
+          
           <input placeholder="Work Phone" type="number" name="workphone" value={values.workphone} onChange={handleWorkPhoneInputChange}/>
-          </div><div>
-          <label>Email Address:</label>
+          <br/>
+          <br/>
+         
+          <label style={mystyleEmail}>Email Address  :      </label>
           <input placeholder="Email Address" type="text" name="emailAddress" value={values.emailAddress} onChange={handleEmailAddressInputChange}/>
+          <br/>
+          <br/>
           </div>
         
       </div>
     </div>
     <div>
       <header>
-        <p> Personal Information</p>
+       
+        <h4 style={mystyle}>Personal Information</h4>
       </header>
       <div>
        
         <div>
-          <label>Full Name:</label>
+          <label style={mystyleText}>Full Name  :</label>
           <input placeholder="FullName" type ="text" name="fullName" value={values.fullName} onChange={handleFullNameInputChange} />
+          <br/>
+          <br/>
         </div>
         <div>
-          <label>Address:</label>
+          <label style={mystyleText}>Address  :</label>
           <input placeholder="Address" type="text" name="personalAddress" value={values.personalAddress} onChange={handleAddressInputChange}/>
+          <br/>
+          <br/>
           </div>
           <div>
-          <label>Home Phone:</label>
+          <label style={mystyleText}>Home Phone  :</label>
           <input placeholder="Home Phone" type="number" name="homePhone" value={values.homePhone} onChange={handleHomePhoneInputChange}/>
+          <br/>
+          <br/>
           </div>
           <div>
-          <label>Cell Phone:</label>
+          <label style={mystyleText}>Cell Phone  :</label>
           <input placeholder="Cell Phone" type="number" name="cellPhone" value={values.cellPhone} onChange={handleCellPhoneInputChange}/>
+          <br/>
+          <br/>
           </div>
           <div>
-          <label>Email Address:</label>
+          <label style={mystyleText}>Email Address  :</label>
           <input placeholder="Email Address" type="text" name="personalEmailAddress" value={values.personalEmailAddress} onChange={handlePersonalEmailAddressInputChange}/>
+          <br/>
+          <br/>
           </div>
        
       </div>
     </div>
     <div>
           <header>
-            <p> EmergencyContactInformation</p>
+           
+            <h4 style={mystyle}>EmergencyContactInformation</h4>
           </header>
           
          
         <div>
-          <label>#1 contact:</label>
+          <label style={mystyleText}>#1 contact:</label>
           <input placeholder="First" type ="text" name="Contact" value={values.first} onChange={handleFirstInputChange} />
+          
           <input placeholder="Last" type ="text" name="Contact" value={values.last} onChange={handleLastInputChange} />
+          <br/>
+          <br/>
         </div>
 
         <div>
-          <label>Address:</label>
+          <label style={mystyleText}>Address  :</label>
 
             
           <input placeholder="city" type="text" name="city" value={values.city} onChange={handleCityInputChange}/>
           <input placeholder="state" type="text" name="state" value={values.state} onChange={handleStateInputChange}/>
           <input placeholder="zipcode" type="text" name="zipcode" value={values.zipcode} onChange={handleZipcodeInputChange}/>
+          <br/>
+          <br/>
           </div>
 
           <div>
-          <label>primaryPhone:</label>
+          <label style={mystyleText}>primaryPhone  :</label>
           <input placeholder="primaryPhone" type="text" name="primaryPhone" value={values.primaryPhone} onChange={handleprimaryPhoneInputChange}/>
+          <br/>
+          <br/>
           </div>
 
           <div>
-          <label>alternatePhone:</label>
+          <label style={mystyleText}>alternatePhone  :</label>
           <input placeholder="alternatePhone" type="text" name="alternatePhone" value={values.alternatePhone} onChange={handlealternatePhoneInputChange}/>
+          <br/>
+          <br/>
           </div>
 
           <div>
-          <label>relationship:</label>
+          <label style={mystyleText}>relationship  :</label>
           <input placeholder="relationship" type="text" name="relationship" value={values.relationship} onChange={handlerelationshipInputChange}/>
+          <br/>
+          <br/>
           </div>
        
          
     </div>
     <div>
-          <label>#2 contact:</label>
+          <label style={mystyleText}>#2 contact:</label>
           <input placeholder="First" type ="text" name="Contact" value={values.ecifirst} onChange={handleFirstInputChangeConatctTwo} />
           <input placeholder="Last" type ="text" name="Contact" value={values.ecilast} onChange={handleLastInputChangeConatctTwo} />
+          <br/>
+          <br/>
         </div>
         <div>
-          <label>Address:</label>
+          <label style={mystyleText}>Address  :</label>
 
             
           <input placeholder="city" type="text" name="city" value={values.ecicity} onChange={handleCityInputChangeConatctTwo}/>
           <input placeholder="state" type="text" name="state" value={values.ecistate} onChange={handleStateInputChangeConatctTwo}/>
           <input placeholder="zipcode" type="text" name="zipcode" value={values.ecizipcode} onChange={handleZipcodeInputChangeConatctTwo}/>
+          <br/>
+          <br/>
           </div>
 
           <div>
-          <label>primaryPhone:</label>
+          <label style={mystyleText}>primaryPhone  :</label>
           <input placeholder="primaryPhone" type="text" name="primaryPhone" value={values.eciprimaryPhone} onChange={handleprimaryPhoneInputChangeConatctTwo}/>
+          <br/>
+          <br/>
           </div>
 
           <div>
-          <label>alternatePhone:</label>
+          <label style={mystyleText}>alternatePhone  :</label>
           <input placeholder="alternatePhone" type="text" name="alternatePhone" value={values.ecialternatePhone} onChange={handlealternatePhoneInputChangeConatctTwo}/>
+          <br/>
+          <br/>
           </div>
 
           <div>
-          <label>relationship:</label>
+          <label style={mystyleText}>relationship  :</label>
           <input placeholder="relationship" type="text" name="relationship" value={values.ecirelationship} onChange={handlerelationshipInputChangeConatctTwo}/>
+          <br/>
+          <br/>
           </div>
         
-    <div>
+    <div style={mystyleSave}>
       
        
-       <input type='submit' value='SAVE' />
+       <input type='submit'  value='SAVE' />
        
            </div>
       </form> 
