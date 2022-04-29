@@ -354,20 +354,20 @@ function CreateEmployee() {
           <label style={mystyleText}>Title/Position :</label>
           
           <input placeholder="Title"  
-          style={{marginLeft:25,borderLeft:0,
+          style={{marginLeft:34,borderLeft:0,
           borderRight:0,borderTop:0,backgroundColor:"lightcyan",width: "1000px"}} type ="text" name="title" value={values.title} onChange={handleTitleInputChange} />
           <br/>
           <br/>
         </div>
         <div>
-          <label style={{marginLeft:20}}>Work Phone  :</label>
+          <label style={{marginLeft:25}}>Work Phone  :</label>
          
-          <input placeholder="Work Phone"style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'500px'}}type="number" name="workphone" value={values.workphone} onChange={handleWorkPhoneInputChange}/>
+          <input placeholder="Work Phone"style={{marginLeft:38,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'500px'}}type="number" name="workphone" value={values.workphone} onChange={handleWorkPhoneInputChange}/>
           <br/>
           <br/>
          
           <label style={mystyleEmail}>Email Address  :      </label>
-          <input placeholder="Email Address" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'1000px'}} type="text" name="emailAddress" value={values.emailAddress} onChange={handleEmailAddressInputChange}/>
+          <input placeholder="Email Address" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'500px'}} type="text" name="emailAddress" value={values.emailAddress} onChange={handleEmailAddressInputChange}/>
           <br/>
           <br/>
           </div>
@@ -382,32 +382,32 @@ function CreateEmployee() {
       <div>
        
         <div>
-          <label style={mystyleText}>Full Name  :</label>
+          <label style={{'marginLeft':60}}>Full Name  :</label>
           <input placeholder="FullName"
            style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'1000px'}} type ="text" name="fullName" value={values.fullName} onChange={handleFullNameInputChange} />
           <br/>
           <br/>
         </div>
         <div>
-          <label style={mystyleText}>Address  :</label>
+          <label style={{marginLeft:72}}>Address  :</label>
           <input placeholder="Address" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}}type="text" name="personalAddress" value={values.personalAddress} onChange={handleAddressInputChange}/>
           <br/>
           <br/>
           </div>
           <div>
-          <label style={mystyleText}>Home Phone  :</label>
+          <label style={{marginLeft:42}}>Home Phone  :</label>
           <input placeholder="Home Phone" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}} type="number" name="homePhone" value={values.homePhone} onChange={handleHomePhoneInputChange}/>
           <br/>
           <br/>
           </div>
           <div>
-          <label style={mystyleText}>Cell Phone  :</label>
+          <label style={{marginLeft:55}}>Cell Phone  :</label>
           <input placeholder="Cell Phone" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}} type="number" name="cellPhone" value={values.cellPhone} onChange={handleCellPhoneInputChange}/>
           <br/>
           <br/>
           </div>
           <div>
-          <label style={mystyleText}>Email Address  :</label>
+          <label style={{marginLeft:34}}>Email Address  :</label>
           <input placeholder="Email Address" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}} type="text" name="personalEmailAddress" value={values.personalEmailAddress} onChange={handlePersonalEmailAddressInputChange}/>
           <br/>
           <br/>
@@ -424,9 +424,9 @@ function CreateEmployee() {
          
         <div>
           <label style={mystyleText}>#1 contact:</label>
-          <input placeholder="First" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}}  type ="text" name="Contact" value={values.first} onChange={handleFirstInputChange} />
+          <input placeholder="First" style={{marginLeft:50,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}}  type ="text" name="Contact" value={values.first} onChange={handleFirstInputChange} />
           
-          <input placeholder="Last" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}} type ="text" name="Contact" value={values.last} onChange={handleLastInputChange} />
+          <input placeholder="Last" style={{marginLeft:70,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}} type ="text" name="Contact" value={values.last} onChange={handleLastInputChange} />
           <br/>
           <br/>
         </div>
@@ -435,7 +435,7 @@ function CreateEmployee() {
           <label style={mystyleText}>Address  :</label>
 
             
-          <input placeholder="city" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'300px'}} type="text" name="city" value={values.city} onChange={handleCityInputChange}/>
+          <input placeholder="city" style={{marginLeft:65,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'300px'}} type="text" name="city" value={values.city} onChange={handleCityInputChange}/>
           <input placeholder="state" style={{marginLeft:10,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'300px'}}  type="text" name="state" value={values.state} onChange={handleStateInputChange}/>
           <input placeholder="zipcode" style={{marginLeft:10,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'300px'}}  type="text" name="zipcode" value={values.zipcode} onChange={handleZipcodeInputChange}/>
           <br/>
@@ -451,13 +451,13 @@ function CreateEmployee() {
 
           <div>
           <label style={mystyleText}>alternatePhone  :</label>
-          <input placeholder="alternatePhone" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}} type="text" name="alternatePhone" value={values.alternatePhone} onChange={handlealternatePhoneInputChange}/>
+          <input placeholder="alternatePhone" style={{marginLeft:20,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}} type="text" name="alternatePhone" value={values.alternatePhone} onChange={handlealternatePhoneInputChange}/>
           <br/>
           <br/>
           </div>
 
           <div>
-          <label style={mystyleText}>relationship  :</label>
+          <label style={{marginLeft:42}}>relationship  :</label>
           <input placeholder="relationship" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}} type="text" name="relationship" value={values.relationship} onChange={handlerelationshipInputChange}/>
           <br/>
           <br/>
@@ -467,7 +467,7 @@ function CreateEmployee() {
     </div>
     <div>
           <label style={mystyleText}>#2 contact:</label>
-          <input placeholder="First"style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}} type ="text" name="Contact" value={values.ecifirst} onChange={handleFirstInputChangeConatctTwo} />
+          <input placeholder="First"style={{marginLeft:50,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}} type ="text" name="Contact" value={values.ecifirst} onChange={handleFirstInputChangeConatctTwo} />
           <input placeholder="Last" style={{marginLeft:10,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}} type ="text" name="Contact" value={values.ecilast} onChange={handleLastInputChangeConatctTwo} />
           <br/>
           <br/>
@@ -476,7 +476,7 @@ function CreateEmployee() {
           <label style={mystyleText}>Address  :</label>
 
             
-          <input placeholder="city" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'300px'}}  type="text" name="city" value={values.ecicity} onChange={handleCityInputChangeConatctTwo}/>
+          <input placeholder="city" style={{marginLeft:60,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'300px'}}  type="text" name="city" value={values.ecicity} onChange={handleCityInputChangeConatctTwo}/>
           <input placeholder="state" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'300px'}}type="text" name="state" value={values.ecistate} onChange={handleStateInputChangeConatctTwo}/>
           <input placeholder="zipcode" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'300px'}} type="text" name="zipcode" value={values.ecizipcode} onChange={handleZipcodeInputChangeConatctTwo}/>
           <br/>
@@ -484,21 +484,21 @@ function CreateEmployee() {
           </div>
 
           <div>
-          <label style={mystyleText}>primaryPhone  :</label>
+          <label style={{marginLeft:15}}>primaryPhone  :</label>
           <input placeholder="primaryPhone"style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}} type="text" name="primaryPhone" value={values.eciprimaryPhone} onChange={handleprimaryPhoneInputChangeConatctTwo}/>
           <br/>
           <br/>
           </div>
 
           <div>
-          <label style={mystyleText}>alternatePhone  :</label>
+          <label style={{marginLeft:5}}>alternatePhone  :</label>
           <input placeholder="alternatePhone" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}} type="text" name="alternatePhone" value={values.ecialternatePhone} onChange={handlealternatePhoneInputChangeConatctTwo}/>
           <br/>
           <br/>
           </div>
 
           <div>
-          <label style={mystyleText}>relationship  :</label>
+          <label style={{marginLeft:30}}>relationship  :</label>
           <input placeholder="relationship" style={{marginLeft:25,borderLeft:0,borderRight:0,borderTop:0,backgroundColor:"lightcyan",width:'400px'}} type="text" name="relationship" value={values.ecirelationship} onChange={handlerelationshipInputChangeConatctTwo}/>
           <br/>
           <br/>
