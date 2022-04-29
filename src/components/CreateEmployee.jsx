@@ -22,6 +22,16 @@ function CreateEmployee() {
         primaryPhone:'',
         alternatePhone:'',
         relationship: '',
+        ecifirst: '',
+        ecilast:'',
+        eciaddress: '',
+        ecicity: '',
+        ecistate: '',
+        ecizipcode: '',
+        eciprimaryPhone:'',
+        ecialternatePhone:'',
+        ecirelationship: ''
+        
     })
     const handleTodayDateInputChange = (event) => {
         event.persist();
@@ -153,6 +163,69 @@ function CreateEmployee() {
             relationship: event.target.value,
         }));
     };
+    const handleFirstInputChangeConatctTwo = (event) => {
+        event.persist();
+        setValues((values) => ({
+            ...values,
+            ecifirst: event.target.value,
+        }));
+    };
+    const handleLastInputChangeConatctTwo = (event) => {
+        event.persist();
+        setValues((values) => ({
+            ...values,
+            ecilast: event.target.value,
+        }));
+    };
+    const handleaddressInputChangeConatctTwo = (event) => {
+        event.persist();
+        setValues((values) => ({
+            ...values,
+            eciaddress: event.target.value,
+        }));
+    };
+    const handleCityInputChangeConatctTwo = (event) => {
+        event.persist();
+        setValues((values) => ({
+            ...values,
+            ecicity: event.target.value,
+        }));
+    };
+    const handleprimaryPhoneInputChangeConatctTwo = (event) => {
+        event.persist();
+        setValues((values) => ({
+            ...values,
+            eciprimaryPhone: event.target.value,
+        }));
+    };
+    const handleStateInputChangeConatctTwo = (event) => {
+        event.persist();
+        setValues((values) => ({
+            ...values,
+            ecistate: event.target.value,
+        }));
+    };
+    const handleZipcodeInputChangeConatctTwo = (event) => {
+        event.persist();
+        setValues((values) => ({
+            ...values,
+            ecizipcode: event.target.value,
+        }));
+    };
+    const handlealternatePhoneInputChangeConatctTwo = (event) => {
+        event.persist();
+        setValues((values) => ({
+            ...values,
+            ecialternatePhone: event.target.value,
+        }));
+    };
+    const handlerelationshipInputChangeConatctTwo = (event) => {
+        event.persist();
+        setValues((values) => ({
+            ...values,
+            ecirelationship: event.target.value,
+        }));
+    };
     
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -176,6 +249,16 @@ function CreateEmployee() {
         primaryPhone:values.primaryPhone,
         alternatePhone:values.alternatePhone,
         relationship: values.relationship,
+        ecifirst: values.ecifirst,
+        ecilast:values.ecilast,
+        eciaddress: values.eciaddress,
+        ecicity:values.ecicity,
+        ecistate: values.ecistate,
+        ecizipcode: values.ecizipcode,
+        eciprimaryPhone:values.eciprimaryPhone,
+        ecialternatePhone:values.ecialternatePhone,
+        ecirelationship: values.ecirelationship,
+        
         }
         console.log('employee => ' + JSON.stringify(employee));
         
@@ -284,6 +367,35 @@ function CreateEmployee() {
        
          
     </div>
+    <div>
+          <label>#2 contact:</label>
+          <input placeholder="First" type ="text" name="Contact" value={values.ecifirst} onChange={handleFirstInputChangeConatctTwo} />
+          <input placeholder="Last" type ="text" name="Contact" value={values.ecilast} onChange={handleLastInputChangeConatctTwo} />
+        </div>
+        <div>
+          <label>Address:</label>
+
+            
+          <input placeholder="city" type="text" name="city" value={values.ecicity} onChange={handleCityInputChangeConatctTwo}/>
+          <input placeholder="state" type="text" name="state" value={values.ecistate} onChange={handleStateInputChangeConatctTwo}/>
+          <input placeholder="zipcode" type="text" name="zipcode" value={values.ecizipcode} onChange={handleZipcodeInputChangeConatctTwo}/>
+          </div>
+
+          <div>
+          <label>primaryPhone:</label>
+          <input placeholder="primaryPhone" type="text" name="primaryPhone" value={values.eciprimaryPhone} onChange={handleprimaryPhoneInputChangeConatctTwo}/>
+          </div>
+
+          <div>
+          <label>alternatePhone:</label>
+          <input placeholder="alternatePhone" type="text" name="alternatePhone" value={values.ecialternatePhone} onChange={handlealternatePhoneInputChangeConatctTwo}/>
+          </div>
+
+          <div>
+          <label>relationship:</label>
+          <input placeholder="relationship" type="text" name="relationship" value={values.ecirelationship} onChange={handlerelationshipInputChangeConatctTwo}/>
+          </div>
+        
     <div>
       
        
