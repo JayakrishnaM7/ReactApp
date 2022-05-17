@@ -290,7 +290,9 @@ function CreateEmployee() {
             ecirelationship: event.target.value,
         }));
     };
-    
+     const shoot = (a) => {
+          alert(a);
+        }
     const handleSubmit = (e) => {
         e.preventDefault();
         let employee={
@@ -507,7 +509,7 @@ function CreateEmployee() {
     <div style={mystyleSave}>
       
        
-       <input type='submit'  value='SAVE' />
+       <button onClick={() => shoot("Form Submitted Successfully!")}>SAVE</button>
        
            </div>
       </form> 
