@@ -336,14 +336,15 @@ function CreateEmployee() {
   return (
     <div>
      <header>
-     <h1 style={{color: "black"}}>Employee Contact Information Form</h1>
+     <h1 style={{color: "black",marginLeft:380}}>Employee Contact Information Form</h1>
       </header>
-      Please complete the following information to ensure we maintain a current
-      record of contact information for you and your emergency contacts.
+     <h4 style={{ marginLeft:30}}>Please complete the following information to ensure we maintain a current</h4>
+      <h4 style={{ marginLeft:30,marginTop:0}}>record of contact information for you and your emergency contacts.</h4>
+      
       
       <form onSubmit={e => {handleSubmit(e)}}>
             <div>
-                <label style={mystyleText}>Today’s Date:</label>
+                <label style={{marginLeft:30}}>Today’s Date:</label>
                 <input type="date"  name="todayDate" value={values.todayDate} onChange={handleTodayDateInputChange}/>
             </div>
             <div>
