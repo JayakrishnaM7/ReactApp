@@ -344,7 +344,7 @@ function CreateEmployee() {
       
       <form onSubmit={e => {handleSubmit(e)}}>
             <div>
-                <label style={{marginLeft:30}}>Today’s Date:</label>
+               <label style={{marginLeft:450}}>Today’s Date :</label>
                 <input type="date"  name="todayDate" value={values.todayDate} onChange={handleTodayDateInputChange}/>
             </div>
             <div>
